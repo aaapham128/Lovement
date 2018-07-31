@@ -1,6 +1,18 @@
-.button1{
+.button1 {
     float: right;
-    /* width: 9em;
-    height: 3em; */
-    margin: auto;
+    /* position: relative; */
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 130px;
+    height: 50px;
+    margin: -40px auto 0px auto;
+}
+
+.button1:hover {
+  background-color: Blue; 
+    color: white;
+}
+
+h1 {
+  font-size: 40px;
 }

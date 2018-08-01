@@ -19,3 +19,11 @@ h1 {
 font-size: 50px;
 text-align: center;
 }
+
+h2 {
+  text-align: left;
+}
+
+script {
+  align-items: center;
+}

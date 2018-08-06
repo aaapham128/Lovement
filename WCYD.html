@@ -2,37 +2,105 @@
 
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="CSS\Events.css">
-    <h1>
-    Lovement
-    <h2>
-      <form method="get" action="Home.html"><button class="button1" type="submit">Home</button></form>
-      <form method="get" action="OurStory.html"><button class="button2" type="submit">Our Story</button></form>
-      <form method="get" action="WCYD.html"><button class="button3" type="submit"> What You Can Do</button></form>
-      <form method="get" action="Events.html"><button class="button4" type="submit">Events</button></form>
-      <form method="get" action="Articles.html"><button class="button5" type="submit">Articles</button></form>
-      </h2>
- </h1>
+    <link rel="stylesheet" type="text/css" href="css\WCYD.css">
+    <link rel="stylesheet" type="text/css" href="css\button.css">
+    <link rel="shortcut icon" type="images/png" href = "photo/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Sansita' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Palanquin|Quicksand:500" rel="stylesheet"><link rel="stylesheet" type="text/css" href="CSS/Home.css">
+    <h1>Lovement</h1>
+  <h4>
+    <form method="get" action="Home.html"><button class="button1" type="submit">Home</button>
+    <form method="get" action="OurStory.html"><button class="button2" type="submit">Our Story</button>
+    <form method="get" action="WCYD.html"><button class="button3" type="submit">What Can You Do</button>
+    <form method="get" action="Events.html"><button class="button4" type="submit">Events</button>
+    <form method="get" action="Articles.html"><button class="button5" type="submit">Articles</button>
+ </h4>
+
  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
  <meta charset="utf-8">
  <title>Places Search Box</title>
-
+ <style>
+   /* Always set the map height explicitly to define the size of the div
+    * element that contains the map. */
+   #map {
+     height: 50%;
+     width: 60%;
+   }
+   /* Optional: Makes the sample page fill the window. */
+   html, body {
+     height: 100%;
+     margin: 0;
+     padding: 0;
+   }
+   #description {
+     font-family: Roboto;
+     font-size: 15px;
+     font-weight: 300;
+   }
+   #infowindow-content .title {
+     font-weight: bold;
+   }
+   #infowindow-content {
+     display: none;
+   }
+   #map #infowindow-content {
+     display: inline;
+   }
+   .pac-card {
+     margin: 10px 10px 0 0;
+     border-radius: 2px 0 0 2px;
+     box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     outline: none;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+     background-color: #fff;
+     font-family: Roboto;
+   }
+   #pac-container {
+     padding-bottom: 12px;
+     margin-right: 12px;
+   }
+   .pac-controls {
+     display: inline-block;
+     padding: 5px 11px;
+   }
+   .pac-controls label {
+     font-family: Roboto;
+     font-size: 13px;
+     font-weight: 300;
+   }
+   #pac-input {
+     background-color: #fff;
+     font-family: Roboto;
+     font-size: 15px;
+     font-weight: 300;
+     margin-left: 12px;
+     padding: 0 11px 0 13px;
+     text-overflow: ellipsis;
+     width: 400px;
+   }
+   #pac-input:focus {
+     border-color: #4d90fe;
+   }
+   #title {
+     color: #fff;
+     background-color: #4d90fe;
+     font-size: 25px;
+     font-weight: 500;
+     padding: 6px 12px;
+   }
+   #target {
+     width: 345px;
+   }
+ </style>
   </head>
 
   <body>
+    <div>
+      <br>
+    <h2> What Can You Do To Make A Difference?</h2>
 
     <h3>
-      <br>
-      <br>
-      <br>
-      <center>
-      What Can You Do To Make A Difference?
-    </center>
-      <br>
-    </h3>
-
-    <h4>
-      <right>
       Where To Start:
       <div>
         The first step to making a difference in your community is to start by mobilizing others.
@@ -49,10 +117,42 @@
                 <div>
                   ~ Volunteering at your local youth centers
         <div>
+          <br>
           As Barack Obama once said, " Change will not come if we wait for some other person, or if we wait for some other time.
           We are the ones we've been waiting for. We are the change that we seek."
         <div>
-        </right>
-      </h4>
+          <br>
+            Here are the organizations where you can get involved:
+
+            <div class="BlackLivesMatter">
+              <li>Black Girls Code</li>
+              <li>Race Matters Insitute</li>
+              <li>NAACP</li>
+              <li>Your Local Black Student Union</li>
+            </div>
+
+            <div class="NoBanNoWall">
+              <li>Mayday</li>
+              <li>CAIR California</li>
+            </div>
+
+            <div class="LoveWins">
+              <li>The LGBT Youth Space</li>
+              <li>Avdre Lorde Project</li>
+              <li>Your Local Gay Straight Alliance</li>
+            </div>
+
+            <div class="MeToo">
+            <li>Planned Parenthood</li>
+            <li>Center For Reproductive Rights</li>
+            <li>ACCESS Women's Health Justice</li>
+          </div>
+
+
+
+          </div>
+
+          <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+          <div id="map"></div>
 
   </body>

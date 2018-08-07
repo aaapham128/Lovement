@@ -1,49 +1,75 @@
 <!DOCTYPE>
+<html>
 <head>
-    <link rel="stylesheet" type="text/css" href="CSS\LoveWins.css">
+  <link rel="stylesheet" type="text/css" href="CSS/LoveWins.css">
+  <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gilda+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:700" rel="stylesheet">
+
 </head>
 
+
 <body>
+  <!-- Title and Logo -->
 
+  <img = src= "photos/L O V E M E N T (5).png" class="logo">
+    <h1>L o v e m e n t</h1>
+
+<div>
+  <!-- buttons -->
   <h2>
-    <form method="get" action="Home.html"><button class="button1" type="submit">Home</button></form>
-    <form method="get" action="OurStory.html"><button class="button1" type="submit">Our Story</button></form>
+    <form method="get" action="Home.html"><button class="button1" type="submit"> Home</button></form>
+    <form method="get" action="OurStory.html"><button class="button1" type="submit"> Our Story</button></form>
     <form method="get" action="WCYD.html"><button class="button1" type="submit"> What You Can Do</button></form>
-    <!-- <form method="get" action="Events.html"><button class="button4" type="submit">Events</button></form> -->
-    <form method="get" action="Articles.html"><button class="button1" type="submit">Articles</button></form>
-    </h2>
 
-    <img id="tag" src="photos\LoveWins_tag.jpg"s>
+    <div class="dropdown">
+      <button class="button1">Articles</button>
+      <div class="dropdown-content">
+        <form method="get" action=""><button class="button1" type="submit" disabled>Articles</button></form>
+        <form method="get" action="BlackLivesMatter.html"><button class="button1" type="submit">#BlackLivesMatter</button></form>
+        <form method="get" action="NoBanNoWall.html"><button class="button1" type="submit">#NoBanNoWall</button></form>
+        <form method="get" action="LoveWins.html"><button class="button1" type="submit">#LoveWins</button></form>
+        <form method="get" action="MeToo.html"><button class="button1" type="submit">#MeToo</button></form>
+
+   </h2>
+
+   <center>
+    <img id="tag" src="photos\LoveWins_tag.jpg" width="1300" height="350" alt="#LoveWins">
+  </center>
 
     <br>
 
     <h3>
-      Introduction
+    A Brief History of #LoveWins
       </h3>
 
-      <p>#LoveWins represents the ongoing LGBTQ+ movement advocating for the rights and equality of those who identify as gay, lesbian, bisexual, transgender, queer, questioning, intersex, and nonbinary.
+      <h6>Written by Anh Thu Pham.</h6>
+
+      <p><strong>#LoveWins represents the ongoing LGBTQ+ movement advocating for the rights and equality of those who identify as gay, lesbian, bisexual, transgender, queer, questioning, intersex, and nonbinary.
       On June 28, 1969, the police officers of New York City raided a gay bar called the Stonewall and it caused a riot that pushed the modern civil movement of the modern gay rights activism.
       In 1993, President Clinton passed the Don't Ask, Don't Tell policy, which banned openly gay male and female Americans from the army.
       The Don't Ask Don't Tell policy was repealed in September of 2011.
-      The United States Supreme Court, the highest court in the United States court system, ruled same sex marriages are consitutional in all 50 states and the states can't prohibit same sex couples from marrying.
+      The United States Supreme Court, the highest court in the United States court system, ruled same sex marriages are consitutional on the of June 26, 2015 in all 50 states and that the states can't prohibit same sex couples from marrying.
+    </strong>
 
-      <div>
+      <div class="issues">
         Some of the issues of the LGBTQ+ community are facing currently are:
         <li> Hate crimes and discrimmination against LGBTQ+ people</li>
         <li> LGBTQ+ couples are turned away from adopting children in foster care</li>
-        <li> Transgender students are not allowed to use the restroom</li>
+        <li> Transgender students are not allowed to use public restrooms</li>
 
       </div>
 
   <br>
   <div>
-  Based on these new articles:
+  Based on these articles:
   <br>
   <a href="https://www.cbsnews.com/pictures/a-history-of-gay-rights-in-america/">CBS News A History of Gay Rights in America</a>
   <br>
   <a href="https://www.cnn.com/2015/06/19/us/lgbt-rights-milestones-fast-facts/index.html">CNN LGBT Rights Milestones Fast Facts</a>
 </div>
 
+<br>
 <br>
 <div class="slideshow-container">
 
@@ -85,36 +111,25 @@
             <div class="text">Credit to Kathy Willens/AP</div>
           </div>
 
+
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 
 <br>
-<div style="text-align:center">
-<span class="dot" onclick="currentSlide(1)"></span>
-<span class="dot" onclick="currentSlide(2)"></span>
-<span class="dot" onclick="currentSlide(3)"></span>
-<span class="dot" onclick="currentSlide(4)"></span>
-<span class="dot" onclick="currentSlide(5)"></span>
-<span class="dot" onclick="currentSlide(6)"></span>
-<span class="dot" onclick="currentSlide(7)"></span>
-</div>
 
 <script>
 var slideIndex = 1;
 var timer = null;
 showSlides(slideIndex);
-
 function plusSlides(n) {
   clearTimeout(timer);
   showSlides(slideIndex += n);
 }
-
 function currentSlide(n) {
   clearTimeout(timer);
   showSlides(slideIndex = n);
 }
-
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -132,17 +147,19 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   timer = setTimeout(showSlides, 3000);
 }
-
 </script>
 
+<br>
+<br>
+<br>
 <h4>
-  What is current in the LGBTQ+ community?
+  What's the Buzz on the #LoveWins Movement?
 </h4>
 
-  <iframe src="https://www.nbcnews.com/nbc-out"></iframe>
-  <iframe src="https://www.economist.com/topics/lesbian-and-gay-issues-1"></iframe>
-  <iframe src="https://apnews.com/search/lgbt"><iframe>
-
-<img src="photos/LoveWins_banner.jpg" style="width:70%">
+  <center>
+  <iframe src="https://www.nbcnews.com/nbc-out" height="600px" width="410px"></iframe>
+  <iframe src="https://www.economist.com/topics/lesbian-and-gay-issues-1" height="600px" width="410px"></iframe>
+  <iframe src="https://apnews.com/search/lgbt" height="600px" width="410px"><iframe>
+  </center>
 
 </body>

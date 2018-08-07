@@ -1,4 +1,5 @@
 /* Button Design */
+
 .button1 {
   display: inline-block;
   /* padding: 15px 25px;
@@ -18,89 +19,129 @@
   position: relative;
   padding: 0px 10px;
   /* border-radius: 10px; */
-  width: 150px;
+  width: 155px;
   height: 50px;
   margin: -25px auto 20px auto;
   position:static;
-  margin-left: 65px;
+  margin-left: 120px;
   margin-right: 10px;
   vertical-align: top;
-  background-color: #DDB5FF;
 }
 
-.button1:hover {
-  background-color:lavender
-}
+.button1:hover {background-color: gray}
 
 .button1:active {
-  background-color: purple;
-  box-shadow: 0 5px purple;
+  background-color: gray;
+  box-shadow: 0 5px gray;
   transform: translateY(4px);
 }
 
+/* The font style for the buttons on the drop down menu */
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
 h1 {
-  font-size: 75px;
-  margin-right:52px;
-  text-align: center;
-  color: #89818C;
-  font-family: 'Bungee Shade', cursive;
+  background-color: #89818C;
+font-size: 65px;
+text-align: center;
+color: white;
+font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.logo {
+  padding-top: -700px;
+  float:left;
+  width: 85px;
+  height:85px;
+}
+
+body{
+  background-color:white;
+  font-family: 'Gilda Display', serif;
+  font-size:14px;
+  margin-left: 30px;
+  margin-right: 30px
 }
 
 h3{
   font-family: 'Gilda Display', serif;
-  position:relative;
-  right: -11px;
-  font-size:22px;
+  font-size: 40px;
   text-align: center;
 }
 
 h4{
   font-family: 'Gilda Display', serif;
   font-size: 30px;
+  text-align: center;
 }
 
 p {
   font-family: 'Gilda Display', serif;
-  text-align: left;
-  font-size; 37;
+  text-align: center;
+  font-size: 25px;
+}
+
+.issues {
+  font-family: 'Gilda Display', serif;
+  text-align: center;
+  font-size: 25px;
 }
 
 iframe {
   height:600px;
   width: 410px;
-  margin-left: 5;
-
-}
-
-.logo {
-  padding-top: -500px;
-  float:left;
-  width: 100px;
-  height:100px;
+  margin-left: 30;
 }
 
 #tag {
   float: center;
-  margin-left: 120;
-  margin-right: 20;
-  width: 1000px;
+  margin-left: 100;
+  margin-right: 100;
+  width: 1200px;
   height: 300px;
 }
 
-#banner {
-  float: center;
-  margin-left: ;
-  margin-right: ;
-  width:
-  height:
-}
-
 /* #grad1 {
-
     height: 1500px;
-
     background-image: linear-gradient(to left bottom, #fdcc9b, #fcb478, #fc9b58, #fc7e3d, #fb5c26);
-
 } */
 
 body{
@@ -108,7 +149,6 @@ body{
 }
 
 * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
@@ -132,7 +172,7 @@ img {vertical-align: middle;}
   margin-top: -22px;
   color: purple;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
@@ -154,14 +194,15 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: black;
   font-size: 15px;
   padding: 8px 12px;
-  position: absolute;
+  position: relative;
   bottom: 8px;
   width: 100%;
   text-align: center;
-  margin-right: 50;
+  margin-left: -470;
+  margin-bottom: -50;
 }
 
 /* Number text (1/3 etc) */
@@ -170,11 +211,12 @@ img {vertical-align: middle;}
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  top: -30;
+  left: -10;
 }
 
 /* The dots/bullets/indicators */
-.dot {
+/* .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -183,7 +225,7 @@ img {vertical-align: middle;}
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-}
+} */
 
 .active, .dot:hover {
   background-color: #717171;
